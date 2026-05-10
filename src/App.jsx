@@ -11,6 +11,7 @@ function App() {
                     </a>
                 </div>
                 <div className="space-x-5 font-bold text-gray-700 flex justify-center items-center">
+                    <a href="">Services</a>
                     <a href="">Packages</a>
                     <a href="">Contact</a>
                     <a href="">About Us</a>
@@ -21,7 +22,7 @@ function App() {
                     </a>
                     <button className="bg-amber-500 px-6 py-4 cursor-pointer text-white
                     rounded-lg">
-                        Book Your Ride
+                        Book Now
                     </button>
                 </div>
             </div>
