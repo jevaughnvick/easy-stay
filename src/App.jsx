@@ -4,6 +4,8 @@ import pro from "./assets/professional.jpg";
 import convenient from "./assets/convenient.PNG";
 import reliable from "./assets/reliable.PNG";
 import help from "./assets/help.PNG";
+import footerLogo from "./assets/easystaylogogray.PNG";
+
 
 function App() {
     return (
@@ -419,7 +421,80 @@ function App() {
                 </div>
             </section>
             <footer className="bg-slate-500/10">
-                <div className="h-[500px] px-14 py-30"></div>
+                <div className="h-[500px] text-gray-700">
+                    <div className="px-14 py-14 space-y-20">
+                        <div className="grid grid-cols-3">
+                            <div className="">
+                                <ul className="space-y-5">
+                                    <li>
+                                        <p className="text-xl font-bold">
+                                            Company
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <a className="hover:underline" href="/">About</a>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <a className="hover:underline" href="/">Reviews</a>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <a className="hover:underline" href="/">Contact</a>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div className="">
+                                <ul className="space-y-5">
+                                    <li>
+                                        <p className="text-xl font-bold">
+                                            Resources
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <a className="hover:underline" href="/">Blog</a>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <a className="hover:underline" href="/">Trip Cost Calculator</a>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div className="">
+                                <ul className="space-y-5">
+                                    <li>
+                                        <p className="text-xl font-bold">
+                                            Legal
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <a className="hover:underline" href="/">Privacy Policy</a>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <a className="hover:underline" href="/">Terms of Service</a>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                            <a href="/">
+                                <img src={footerLogo} alt="" width="170px" />
+                            </a>
+                    </div>
+                    <p className="text-center text-sm">
+                        &copy; 2026 EasyStay Concierge Ltd. All Rights Reserved
+                    </p>
+                </div>
             </footer>
         </>
     );
