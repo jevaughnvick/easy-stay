@@ -204,7 +204,46 @@ function App() {
                     </div>
                 </div>
             </section>
-            <section className="bg-slate-500/10">
+            <section className="bg-yellow-500/10">
+                <div className="px-14 py-30 flex">
+                    <div className="flex-1 flex flex-col justify-center space-y-5">
+                        <h1
+                            className="text-5xl font-poppins font-bold text-white bg-yellow-500
+                        p-5 rounded-lg text-center"
+                        >
+                            Always On Time. Always There for You.
+                        </h1>
+                        <p className="text-yellow-600 text-xl text-center">
+                            We pride ourselves in providing a seamless experience without inconveniences, frustration or pain. No hidden fees, no hiccups, no worries.
+                        </p>
+                        <div className="flex space-x-2 justify-center items-center">
+                            <p className="text-yellow-600 text-xl text-center">
+                            Questions?
+                        </p>
+                            <button
+                                className="border border-yellow-500 px-6 py-4 cursor-pointer 
+                            font-bold text-yellow-600
+                            rounded-lg"
+                            >
+                                Contact Us
+                            </button>
+                        </div>
+                    </div>
+                    <div className="flex-1 flex justify-center items-center">
+                        <div
+                            className="p-5 rounded-lg bg-linear-to-bl
+                        from-yellow-500 via-transparent to-transparent"
+                        >
+                            <img
+                                src={help}
+                                alt=""
+                                className="w-[400px] rounded-lg h-[500px] object-cover"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section className="">
                 <div className="px-14 py-30 flex flex-col space-y-20">
                     <div className="flex-1 flex flex-col justify-center space-y-5">
                         <h1
@@ -379,6 +418,9 @@ function App() {
                     </div>
                 </div>
             </section>
+            <footer className="bg-slate-500/10">
+                <div className="h-[500px] px-14 py-30"></div>
+            </footer>
         </>
     );
 }
