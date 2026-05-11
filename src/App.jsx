@@ -19,6 +19,7 @@ function App() {
                 <div className="space-x-5 font-bold text-gray-700 flex justify-center items-center">
                     <a href="">Services</a>
                     <a href="">Reviews</a>
+                    <a href="">Blog</a>
                     <a href="">Contact</a>
                     <a href="">About Us</a>
                 </div>
@@ -129,7 +130,7 @@ function App() {
                 <div className="px-14 py-30 flex">
                     <div className="flex-1 flex flex-col justify-center space-y-5">
                         <h1
-                            className="text-5xl font-poppins font-bold text-white bg-blue-500
+                            className="text-5xl font-libre text-white bg-blue-500/90
                         p-5 rounded-lg text-center"
                         >
                             Private Transport and Personal Assistance
@@ -168,12 +169,12 @@ function App() {
             <section className="">
                 <div className="px-14 py-30 flex flex-row-reverse">
                     <div className="flex-1 flex flex-col justify-center space-y-5">
-                        <h1 className="text-5xl font-poppins font-bold text-[#b4955f] text-center">
+                        <h1 className="text-5xl font-libre text-[#b4955f] text-center">
                             Carefully Selected and Professionally Trained
                             Drivers
                         </h1>
                         <p
-                            className="text-xl text-white bg-[#b4955f]
+                            className="text-xl text-white bg-[#b4955f]/90
                         p-5 rounded-lg text-center"
                         >
                             All EasyStay drivers are professionally trained,
@@ -210,7 +211,7 @@ function App() {
                 <div className="px-14 py-30 flex">
                     <div className="flex-1 flex flex-col justify-center space-y-5">
                         <h1
-                            className="text-5xl font-poppins font-bold text-white bg-yellow-500
+                            className="text-5xl font-libre text-white bg-yellow-500/80
                         p-5 rounded-lg text-center"
                         >
                             Always On Time. Always There for You.
@@ -249,12 +250,12 @@ function App() {
                 <div className="px-14 py-30 flex flex-col space-y-20">
                     <div className="flex-1 flex flex-col justify-center space-y-5">
                         <h1
-                            className="text-5xl font-poppins font-bold text-white bg-slate-700
-                        p-5 rounded-lg text-center"
+                            className="text-5xl font-libre text-slate-600  text-center"
                         >
                             Our Services
                         </h1>
-                        <p className="w-1/2 text-slate-600 text-xl text-center mx-auto">
+                        <p className="w-1/2 text-white text-xl text-center mx-auto bg-slate-700/80
+                        p-5 rounded-lg">
                             Our services are designed to provide a smooth,
                             reliable, and stress-free experience throughout your
                             stay. Choose a package designed around your
@@ -272,14 +273,14 @@ function App() {
                             </li>
                         </ul>
                         <p className="w-1/2 text-slate-600 text-xl text-center mx-auto font-bold">
-                            All-inclusive services. No hidden fees. Fuel, tolls
-                            and parking are all covered.
+                            All-inclusive services: Fuel, tolls
+                            and parking are all covered.<br></br><span className="underline">No hidden fees</span>.
                         </p>
                     </div>
                     <div className="grid grid-cols-3 gap-5">
                         <div className="h-[500px] bg-white p-5 rounded-lg shadow-xl flex flex-col justify-between text-xl hover:scale-105 transition-all transition-duration-200">
                             <div className="space-y-5">
-                                <h3 className="bg-slate-700 p-2 text-white font-bold text-center text-xl">
+                                <h3 className="bg-slate-700/80 p-2 text-white font-bold text-center text-xl">
                                     One &#40;1&#41; Day Concierge<br></br>
                                     &#40;Kingston&#41;
                                 </h3>
@@ -319,7 +320,7 @@ function App() {
                         </div>
                         <div className="h-[500px] bg-white border-4 border-slate-700 p-5 rounded-lg shadow-xl flex flex-col justify-between text-xl hover:scale-105 transition-all transition-duration-200">
                             <div className="space-y-5">
-                                <h3 className="bg-slate-700 p-2 text-white font-bold text-center text-xl">
+                                <h3 className="bg-slate-700/80 p-2 text-white font-bold text-center text-xl">
                                     Two &#40;2&#41; to Three &#40;3&#41; Day
                                     <br></br>Concierge
                                 </h3>
@@ -356,7 +357,7 @@ function App() {
                         </div>
                         <div className="h-[500px] bg-white p-5 rounded-lg shadow-xl flex flex-col justify-between text-xl hover:scale-105 transition-all transition-duration-200">
                             <div className="space-y-5">
-                                <h3 className="bg-slate-700 p-2 text-white font-bold text-center text-xl">
+                                <h3 className="bg-slate-700/80 p-2 text-white font-bold text-center text-xl">
                                     Airport/ Short <br></br>Services
                                 </h3>
                                 <ul>
@@ -387,7 +388,7 @@ function App() {
                         </div>
                         <div className="h-[500px] bg-white p-5 rounded-lg shadow-xl flex flex-col justify-between text-xl hover:scale-105 transition-all transition-duration-200">
                             <div className="space-y-5">
-                                <h3 className="bg-slate-700 p-2 text-white font-bold text-center text-xl">
+                                <h3 className="bg-slate-700/80 p-2 text-white font-bold text-center text-xl">
                                     Out-of-Town <br></br>Services
                                 </h3>
                                 <p>
