@@ -201,8 +201,8 @@ function App() {
                 </div>
             </section>
             <section className="bg-slate-500/10">
-                <div className="px-14 py-30 flex flex-col space-y-20 border border-red-500">
-                    <div className="flex-1 flex flex-col justify-center space-y-5 border border-red-500">
+                <div className="px-14 py-30 flex flex-col space-y-20">
+                    <div className="flex-1 flex flex-col justify-center space-y-5">
                         <h1
                             className="text-5xl font-poppins font-bold text-white bg-slate-700
                         p-5 rounded-lg text-center"
@@ -210,16 +210,168 @@ function App() {
                             Our Services
                         </h1>
                         <p className="w-1/2 text-slate-600 text-xl text-center mx-auto">
-                            Choose a package designed around your schedule,
-                            travel needs, and level of flexibility. Our services
-                            are designed to provide a smooth, reliable, and
-                            stress-free experience throughout your stay.
+                            Our services are designed to provide a smooth,
+                            reliable, and stress-free experience throughout your
+                            stay. Choose a package designed around your
+                            schedule, travel needs, and level of flexibility.
+                        </p>
+                        <ul className="w-1/2 text-slate-600 text-xl text-center mx-auto font-bold flex space-x-5">
+                            <li>
+                                <p>Sedan &#40;1-2 persons&#41;</p>
+                            </li>
+                            <li>
+                                <p>SUV &#40;1-2 persons&#41;</p>
+                            </li>
+                            <li>
+                                <p>Van &#40;5-8 persons&#41;</p>
+                            </li>
+                        </ul>
+                        <p className="w-1/2 text-slate-600 text-xl text-center mx-auto font-bold">
+                            All-inclusive services. No hidden fees. Fuel, tolls
+                            and parking are all covered.
                         </p>
                     </div>
-                    <div className="flex-1 border border-red-500">
-                        <div className=""></div>
-                        <div className=""></div>
-                        <div className=""></div>
+                    <div className="grid grid-cols-3 gap-5">
+                        <div className="h-[500px] bg-white p-5 rounded-lg shadow-xl flex flex-col justify-between text-xl">
+                            <div className="space-y-5">
+                                <h3 className="bg-slate-700 p-2 text-white font-bold text-center text-xl">
+                                    One &#40;1&#41; Day Concierge<br></br>
+                                    &#40;Kingston&#41;
+                                </h3>
+                                <ul>
+                                    <li>
+                                        <p>
+                                            Private driver available up to 8PM
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Airport pickup or drop-off
+                                            &#40;Kingston&#41;
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>Indefinite waiting during appointments</p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Flexible daily schedule within
+                                            Kingston
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div className="flex justify-end">
+                                <p className="flex items-center">
+                                    Starting from
+                                    <span className="text-green-600 font-bold text-2xl ml-1 mr-1 ">
+                                        300
+                                    </span>
+                                    USD/ day
+                                </p>
+                            </div>
+                        </div>
+                        <div className="h-[500px] bg-white border-4 border-slate-700 p-5 rounded-lg shadow-xl flex flex-col justify-between text-xl">
+                            <div className="space-y-5">
+                                <h3 className="bg-slate-700 p-2 text-white font-bold text-center text-xl">
+                                    Two &#40;2&#41; to Three &#40;3&#41; Day
+                                    <br></br>Concierge
+                                </h3>
+                                <ul>
+                                    <li>
+                                        <p>
+                                            Private driver available up to 8PM
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Airport pickup or drop-off
+                                            &#40;Kingston&#41;
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>Indefinite waiting during appointments</p>
+                                    </li>
+                                    <li>
+                                        <p>Flexible daily schedule</p>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div className="flex justify-end">
+                                <p className="flex items-center">
+                                    Starting from
+                                    <span className="text-green-600 font-bold text-2xl ml-1 mr-1 ">
+                                        280
+                                    </span>
+                                    USD/ day
+                                </p>
+                            </div>
+                        </div>
+                        <div className="h-[500px] bg-white p-5 rounded-lg shadow-xl flex flex-col justify-between text-xl">
+                            <div className="space-y-5">
+                                <h3 className="bg-slate-700 p-2 text-white font-bold text-center text-xl">
+                                    Airport/ Short <br></br>Services
+                                </h3>
+                                <ul>
+                                    <li>
+                                        <p>
+                                            Airport pickup or drop-off
+                                            &#40;Kingston&#41;
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>1-2 stops if needed</p>
+                                    </li>
+                                    <li>
+                                        <p>Professional driver assistance</p>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div className="flex justify-end">
+                                <p className="flex items-center">
+                                    Starting from
+                                    <span className="text-green-600 font-bold text-2xl ml-1 mr-1 ">
+                                        130
+                                    </span>
+                                    USD/ day
+                                </p>
+                            </div>
+                        </div>
+                        <div className="h-[500px] bg-white p-5 rounded-lg shadow-xl flex flex-col justify-between text-xl">
+                            <div className="space-y-5">
+                                <h3 className="bg-slate-700 p-2 text-white font-bold text-center text-xl">
+                                    Out-of-Town <br></br>Services
+                                </h3>
+                                <p>
+                                    We offer private concierge transport beyond
+                                    Kingston, tailored to your schedule and
+                                    travel needs.
+                                </p>
+                                <p>
+                                    <a
+                                        href=""
+                                        className="underline text-slate-700"
+                                    >
+                                        Contact us
+                                    </a>{" "}
+                                    to arrange your itinerary and receive a
+                                    custom quote.
+                                </p>
+                                <p>
+                                    Minimum booking requirements may apply for
+                                    out-of-town services
+                                </p>
+                            </div>
+
+                            <div className="flex justify-end">
+                                <p className="flex items-center">
+                                    Available upon request
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
