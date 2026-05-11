@@ -421,9 +421,14 @@ function App() {
                 </div>
             </section>
             <footer className="bg-slate-500/10">
-                <div className="h-[500px] text-gray-700">
-                    <div className="px-14 py-14 space-y-20">
-                        <div className="grid grid-cols-3">
+                <div className="h-[500px] text-gray-700 flex flex-col justify-between">
+                    <div className="px-14 py-14">
+                        <div className="grid grid-cols-4">
+                            <div className="">
+                                <a href="/">
+                                <img src={footerLogo} alt="" width="170px" />
+                                </a>
+                            </div>
                             <div className="">
                                 <ul className="space-y-5">
                                     <li>
@@ -462,6 +467,11 @@ function App() {
                                     </li>
                                     <li>
                                         <p>
+                                            <a className="hover:underline" href="/">Booking Form</a>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
                                             <a className="hover:underline" href="/">Trip Cost Calculator</a>
                                         </p>
                                     </li>
@@ -487,9 +497,7 @@ function App() {
                                 </ul>
                             </div>
                         </div>
-                            <a href="/">
-                                <img src={footerLogo} alt="" width="170px" />
-                            </a>
+                            
                     </div>
                     <p className="text-center text-sm">
                         &copy; 2026 EasyStay Concierge Ltd. All Rights Reserved
