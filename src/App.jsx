@@ -277,7 +277,7 @@ function App() {
                         </p>
                     </div>
                     <div className="grid grid-cols-3 gap-5">
-                        <div className="h-[500px] bg-white p-5 rounded-lg shadow-xl flex flex-col justify-between text-xl">
+                        <div className="h-[500px] bg-white p-5 rounded-lg shadow-xl flex flex-col justify-between text-xl hover:scale-105 transition-all transition-duration-200">
                             <div className="space-y-5">
                                 <h3 className="bg-slate-700 p-2 text-white font-bold text-center text-xl">
                                     One &#40;1&#41; Day Concierge<br></br>
@@ -317,7 +317,7 @@ function App() {
                                 </p>
                             </div>
                         </div>
-                        <div className="h-[500px] bg-white border-4 border-slate-700 p-5 rounded-lg shadow-xl flex flex-col justify-between text-xl">
+                        <div className="h-[500px] bg-white border-4 border-slate-700 p-5 rounded-lg shadow-xl flex flex-col justify-between text-xl hover:scale-105 transition-all transition-duration-200">
                             <div className="space-y-5">
                                 <h3 className="bg-slate-700 p-2 text-white font-bold text-center text-xl">
                                     Two &#40;2&#41; to Three &#40;3&#41; Day
@@ -354,7 +354,7 @@ function App() {
                                 </p>
                             </div>
                         </div>
-                        <div className="h-[500px] bg-white p-5 rounded-lg shadow-xl flex flex-col justify-between text-xl">
+                        <div className="h-[500px] bg-white p-5 rounded-lg shadow-xl flex flex-col justify-between text-xl hover:scale-105 transition-all transition-duration-200">
                             <div className="space-y-5">
                                 <h3 className="bg-slate-700 p-2 text-white font-bold text-center text-xl">
                                     Airport/ Short <br></br>Services
@@ -385,7 +385,7 @@ function App() {
                                 </p>
                             </div>
                         </div>
-                        <div className="h-[500px] bg-white p-5 rounded-lg shadow-xl flex flex-col justify-between text-xl">
+                        <div className="h-[500px] bg-white p-5 rounded-lg shadow-xl flex flex-col justify-between text-xl hover:scale-105 transition-all transition-duration-200">
                             <div className="space-y-5">
                                 <h3 className="bg-slate-700 p-2 text-white font-bold text-center text-xl">
                                     Out-of-Town <br></br>Services
