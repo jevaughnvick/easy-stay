@@ -1,10 +1,13 @@
 import logo from "./assets/easystaylogov2.png";
 import heroPhoto from "./assets/hero-photo.png";
 import pro from "./assets/professional.jpg";
-import convenient from "./assets/convenient.PNG";
-import reliable from "./assets/reliable.PNG";
+import whiteCommitted from "./assets/whitecommitted.PNG";
+import blackReliable from "./assets/blackreliable.PNG";
 import help from "./assets/help.PNG";
 import footerLogo from "./assets/easystaylogogray.PNG";
+import drivers from "./assets/drivercollage.png";
+import there4u from "./assets/there4u.PNG";
+
 
 
 function App() {
@@ -43,7 +46,8 @@ function App() {
 
             <div className="relative">
                 <div className="w-[1200px] h-[350px] absolute top-[550px] right-0 bottom-0 z-100 left-1/2 -translate-x-1/2 grid grid-cols-3 space-x-5">
-                    <div className="bg-white p-5 rounded-lg shadow-xl flex flex-col justify-between">
+                    <div className="bg-white p-5 rounded-lg shadow-xl flex flex-col justify-between
+                    hover:scale-105 transition-all transition-duration-200">
                         <img
                             src={pro}
                             alt=""
@@ -53,9 +57,10 @@ function App() {
                             Professional
                         </h2>
                     </div>
-                    <div className="bg-white p-5 rounded-lg shadow-xl flex flex-col justify-between">
+                    <div className="bg-white p-5 rounded-lg shadow-xl flex flex-col justify-between
+                    hover:scale-105 transition-all transition-duration-200">
                         <img
-                            src={reliable}
+                            src={blackReliable}
                             alt=""
                             className="w-full object-cover rounded-lg h-[250px]"
                         />
@@ -63,11 +68,11 @@ function App() {
                             Reliable
                         </h2>
                     </div>
-                    <div className="bg-white p-5 rounded-lg shadow-xl flex flex-col justify-between">
+                    <div className="bg-white p-5 rounded-lg shadow-xl flex flex-col justify-between hover:scale-105 transition-all transition-duration-200">
                         <img
-                            src={convenient}
+                            src={whiteCommitted}
                             alt=""
-                            className="w-full object-cover rounded-lg h-[250px] object-[50%_35%]"
+                            className="w-full object-cover rounded-lg h-[250px] object-[50%_40%]"
                         />
                         <h2 className="text-3xl font-bold text-center">
                             Committed
@@ -91,7 +96,8 @@ function App() {
                         <div className="flex space-x-5 items-center justify-center font-bold mt-10 w-1/2">
                             <button
                                 className="bg-amber-500 px-6 py-4 cursor-pointer
-                                text-white rounded-lg"
+                                text-white rounded-lg hover:scale-105 transition-all duration-200
+                                active:scale-95"
                             >
                                 Leave a Review
                             </button>
@@ -133,20 +139,21 @@ function App() {
                             className="text-5xl font-libre text-white bg-blue-500/90
                         p-5 rounded-lg text-center"
                         >
-                            Private Transport and Personal Assistance
+                            Private Transport and Personal Assistance.
                         </h1>
                         <p className="text-blue-600 text-xl text-center">
                             EasyStay Concierge provides reliable private
                             transport and concierge services in Jamaica. Ideal for those traveling alone or visiting
                             for the first time.
                         </p>
-                        <div className="flex space-x-5 justify-center items-center font-bold">
+                        <div className="flex space-x-5 justify-center items-center ">
                             <a href="" className="underline text-blue-600">
                                 Learn More
                             </a>
                             <button
                                 className="border border-blue-500 px-6 py-4 cursor-pointer text-blue-600
-                            rounded-lg"
+                            font-bold rounded-lg hover:scale-105
+                            transition-all duration-200 active:scale-95"
                             >
                                 See What Our Clients Think
                             </button>
@@ -154,13 +161,13 @@ function App() {
                     </div>
                     <div className="flex-1 flex justify-center items-center">
                         <div
-                            className="p-5 rounded-lg bg-linear-to-bl
+                            className="p-5 rounded-4xl bg-linear-to-bl
                         from-blue-500 via-transparent to-transparent"
                         >
                             <img
                                 src={help}
                                 alt=""
-                                className="w-[400px] rounded-lg h-[500px] object-cover"
+                                className="w-[350px] rounded-4xl h-[450px] object-cover"
                             />
                         </div>
                     </div>
@@ -171,7 +178,7 @@ function App() {
                     <div className="flex-1 flex flex-col justify-center space-y-5">
                         <h1 className="text-5xl font-libre text-[#b4955f] text-center">
                             Carefully Selected and Professionally Trained
-                            Drivers
+                            Drivers.
                         </h1>
                         <p
                             className="text-xl text-white bg-[#b4955f]/90
@@ -187,7 +194,8 @@ function App() {
                         <div className="flex justify-center font-bold">
                             <button
                                 className="border border-[#b4955f] px-6 py-4 cursor-pointer text-[#b4955f]
-                            rounded-lg"
+                            rounded-lg hover:scale-105
+                            transition-all duration-200 active:scale-95"
                             >
                                 Leave a Review
                             </button>
@@ -195,13 +203,13 @@ function App() {
                     </div>
                     <div className="flex-1 flex justify-center items-center">
                         <div
-                            className="p-5 rounded-lg bg-linear-to-br
+                            className="p-5 rounded-4xl bg-linear-to-br
                         from-[#b4955f] via-transparent to-transparent"
                         >
                             <img
-                                src={help}
+                                src={drivers}
                                 alt=""
-                                className="w-[400px] rounded-lg h-[500px] object-cover"
+                                className="w-[350px] rounded-4xl h-[450px] object-cover"
                             />
                         </div>
                     </div>
@@ -214,7 +222,7 @@ function App() {
                             className="text-5xl font-libre text-white bg-yellow-500/80
                         p-5 rounded-lg text-center"
                         >
-                            Always On Time. Always There for You.
+                            Always On Time, Always There for You.
                         </h1>
                         <p className="text-yellow-600 text-xl text-center">
                             We pride ourselves in providing a seamless experience without inconveniences, frustration or pain. No hidden fees, no hiccups, no worries.
@@ -226,7 +234,8 @@ function App() {
                             <button
                                 className="border border-yellow-500 px-6 py-4 cursor-pointer 
                             font-bold text-yellow-600
-                            rounded-lg"
+                            rounded-lg hover:scale-105
+                            transition-all duration-200 active:scale-95"
                             >
                                 Contact Us
                             </button>
@@ -234,13 +243,13 @@ function App() {
                     </div>
                     <div className="flex-1 flex justify-center items-center">
                         <div
-                            className="p-5 rounded-lg bg-linear-to-bl
+                            className="p-5 rounded-full bg-linear-to-bl
                         from-yellow-500 via-transparent to-transparent"
                         >
                             <img
-                                src={help}
+                                src={there4u}
                                 alt=""
-                                className="w-[400px] rounded-lg h-[500px] object-cover"
+                                className="w-[400px] h-[400px] rounded-full object-cover"
                             />
                         </div>
                     </div>
