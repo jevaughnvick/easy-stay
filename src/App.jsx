@@ -16,7 +16,7 @@ function App() {
                 </div>
                 <div className="space-x-5 font-bold text-gray-700 flex justify-center items-center">
                     <a href="">Services</a>
-                    <a href="">Packages</a>
+                    <a href="">Reviews</a>
                     <a href="">Contact</a>
                     <a href="">About Us</a>
                 </div>
@@ -25,11 +25,16 @@ function App() {
                         Get a Quote
                     </a>
                     <button
-                        className="bg-amber-500 px-6 py-4 cursor-pointer text-white
-                    rounded-lg"
-                    >
-                        Book Now
-                    </button>
+                                className="bg-amber-500 px-6 py-4 cursor-pointer text-white
+                                rounded-lg transition-all duration-200
+                                bg-[linear-gradient(110deg,#b8860b,45%,#f1c40f,75%,#b8860b)]
+                                hover:scale-105
+                                hover:shadow-[0_0_20px_rgba(184,134,11,0.5)]
+                                hover:bg-[length:200%_200%]
+                                active:scale-95"
+                            >
+                                Book Now
+                            </button>
                 </div>
             </div>
 
@@ -82,17 +87,23 @@ function App() {
                         </p>
                         <div className="flex space-x-5 items-center justify-center font-bold mt-10 w-1/2">
                             <button
-                                className="border border-amber-500 px-6 py-4 cursor-pointer
+                                className="bg-amber-500 px-6 py-4 cursor-pointer
                                 text-white rounded-lg"
                             >
-                                Get a Quote
+                                Leave a Review
                             </button>
                             <button
                                 className="bg-amber-500 px-6 py-4 cursor-pointer text-white
-                                rounded-lg"
+                                rounded-lg tracking-widest transition-all duration-200
+                                bg-[linear-gradient(110deg,#b8860b,45%,#f1c40f,85%,#b8860b)]
+                                hover:scale-105
+                                hover:shadow-[0_0_20px_rgba(184,134,11,0.5)]
+                                hover:bg-[length:150%_200%]
+                                active:scale-95"
                             >
                                 Book Your Ride
                             </button>
+                            {/* bg-[length:200%_100%] */}
                         </div>
                         <p className="flex space-x-5 justify-center text-white text-sm mt-2 w-1/2">
                             Professional Dependable Committed
@@ -123,8 +134,7 @@ function App() {
                         </h1>
                         <p className="text-blue-600 text-xl text-center">
                             EasyStay Concierge provides reliable private
-                            transport and concierge services in Kingston,
-                            Jamaica. Ideal for those traveling alone or visiting
+                            transport and concierge services in Jamaica. Ideal for those traveling alone or visiting
                             for the first time.
                         </p>
                         <div className="flex space-x-5 justify-center items-center font-bold">
@@ -171,18 +181,12 @@ function App() {
                             local areas and excellent customer service at all
                             times.
                         </p>
-                        <div className="flex space-x-5 justify-center font-bold">
+                        <div className="flex justify-center font-bold">
                             <button
                                 className="border border-[#b4955f] px-6 py-4 cursor-pointer text-[#b4955f]
                             rounded-lg"
                             >
                                 Leave a Review
-                            </button>
-                            <button
-                                className="border bg-[#b4955f] px-6 py-4 cursor-pointer text-white
-                            rounded-lg"
-                            >
-                                Rate My Driver
                             </button>
                         </div>
                     </div>
