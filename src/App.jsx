@@ -7,11 +7,10 @@ import help from "./assets/help.PNG";
 import footerLogo from "./assets/easystaylogogray.PNG";
 import drivers from "./assets/drivercollage.png";
 import there4u from "./assets/there4u.PNG";
-import { Menu } from 'lucide-react';
-import { HeartHandshake } from 'lucide-react';
-import { BookOpenCheck } from 'lucide-react';
-import { ClipboardClock } from 'lucide-react';
-
+import { Menu } from "lucide-react";
+import { HeartHandshake } from "lucide-react";
+import { BookOpenCheck } from "lucide-react";
+import { ClipboardClock } from "lucide-react";
 
 function App() {
     return (
@@ -30,31 +29,39 @@ function App() {
                     <a href="">About</a>
                 </div>
                 <div className="flex items-center justify-end font-bold">
-                    <a href="" className="max-lg:hidden underline text-amber-600">
+                    <a
+                        href=""
+                        className="max-lg:hidden underline text-amber-600"
+                    >
                         Get a Quote
                     </a>
-                    <a href="" className="max-xs:hidden lg:hidden underline text-amber-600">
+                    <a
+                        href=""
+                        className="max-xs:hidden lg:hidden underline text-amber-600"
+                    >
                         Quote
                     </a>
                     <button
-                                className="bg-amber-500 ml-5 max-lgr:mr-5 px-6 py-4 cursor-pointer text-white
+                        className="bg-amber-500 ml-5 max-lgr:mr-5 px-6 py-4 cursor-pointer text-white
                                 rounded-lg transition-all duration-200 max-xs:hidden
                                 bg-[linear-gradient(110deg,#b8860b,45%,#f1c40f,75%,#b8860b)]
                                 hover:scale-105
                                 hover:shadow-[0_0_20px_rgba(184,134,11,0.5)]
                                 hover:bg-[length:200%_200%]
                                 active:scale-95"
-                            >
-                                Book Now
+                    >
+                        Book Now
                     </button>
-                        <Menu size={25} className="lgr:hidden" />
+                    <Menu size={25} className="lgr:hidden" />
                 </div>
             </div>
 
             <div className="relative">
-                <div className="w-[90%] max-lgr:hidden h-[350px] absolute top-[550px] right-0 bottom-0 z-100 left-1/2 -translate-x-1/2 grid grid-cols-3 space-x-5">
-                    <div className="bg-white p-5 rounded-lg shadow-xl flex flex-col justify-between
-                    hover:scale-105 transition-all transition-duration-200">
+                <div className="w-[90%] h-[350px] absolute top-[85%] right-0 bottom-0 z-100 left-1/2 -translate-x-1/2 grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-5">
+                    <div
+                        className="bg-white p-5 rounded-lg shadow-xl flex flex-col justify-between
+                    hover:scale-105 transition-all transition-duration-200"
+                    >
                         <img
                             src={pro}
                             alt=""
@@ -64,8 +71,10 @@ function App() {
                             Professional
                         </h2>
                     </div>
-                    <div className="bg-white p-5 rounded-lg shadow-xl flex flex-col justify-between
-                    hover:scale-105 transition-all transition-duration-200">
+                    <div
+                        className="bg-white p-5 rounded-lg shadow-xl flex flex-col justify-between
+                    hover:scale-105 transition-all transition-duration-200"
+                    >
                         <img
                             src={blackReliable}
                             alt=""
@@ -86,11 +95,11 @@ function App() {
                         </h2>
                     </div>
                 </div>
-                <section className="relative h-screen max-lg:h-[95vh] max-md:h-[90vh] max-sm:h-[85vh] overflow-hidden">
+
+                <section className="relative h-screen max-lgr:h-[95vh] max-md:h-[90vh] max-sm:h-[85vh] overflow-hidden">
                     <div className="relative z-10 h-full p-14 max-md:px-8 max-sm:px-5 flex flex-col justify-center max-md:backdrop-blur-[2px] select-none">
                         <h1 className="text-5xl max-lgr:text-4xl max-lg:text-3xl max-sm:text-2xl font-display font-bold text-white w-[70%] max-lgr:w-[75%] max-md:w-full ">
-                            Private Driver and Personal Assistance
-                            Service
+                            Private Driver and Personal Assistance Service
                         </h1>
                         <p className="text-white text-lg max-lgr:w-[60%] max-md:w-full mt-5 w-1/2">
                             Reliable private transport and concierge services
@@ -101,13 +110,13 @@ function App() {
                             in seconds.
                         </p>
                         <div className="flex mt-10 w-1/2 max-lgr:w-[60%] max-md:space-x-5 space-x-5  max-md:space-y-0 items-center justify-center font-bold max-md:w-full max-md:flex-row">
-                                <button
-                                    className="bg-amber-500 px-6 py-4 cursor-pointer
+                            <button
+                                className="bg-amber-500 px-6 py-4 cursor-pointer
                                     text-white rounded-lg hover:scale-105 transition-all duration-200
                                     active:scale-95 max-sm:text-sm"
-                                >
-                                    Leave a Review
-                                </button>
+                            >
+                                Leave a Review
+                            </button>
                             <button
                                 className="bg-amber-500 px-6 py-4 cursor-pointer text-white
                                 rounded-lg tracking-widest transition-all duration-200
@@ -126,13 +135,16 @@ function App() {
                         </p> */}
                         <ul className="flex space-x-2 justify-center text-white text-sm mt-2 w-1/2 max-lgr:w-[60%] max-md:w-full font-bold">
                             <li className="flex items-center">
-                                Professional<BookOpenCheck size={25} className="ml-2" />
+                                Professional
+                                <BookOpenCheck size={25} className="ml-2" />
                             </li>
                             <li className="flex items-center">
-                                Reliable<ClipboardClock size={25} className="ml-2" />
+                                Reliable
+                                <ClipboardClock size={25} className="ml-2" />
                             </li>
                             <li className="flex items-center">
-                                Committed<HeartHandshake size={25} className="ml-2" />
+                                Committed
+                                <HeartHandshake size={25} className="ml-2" />
                             </li>
                         </ul>
                     </div>
@@ -148,43 +160,7 @@ function App() {
                 </section>
             </div>
 
-            <section className="h-[400px] max-lgr:hidden"></section>
-            <section className="lgr:hidden">
-                <div className="px-14 max-md:px-8 max-sm:px-5 py-30 grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-5">
-                    <div className="bg-white p-5 rounded-lg shadow-xl flex flex-col justify-between
-                    hover:scale-105 transition-all transition-duration-200">
-                        <img
-                            src={pro}
-                            alt=""
-                            className="w-full object-cover rounded-lg h-[250px]"
-                        />
-                        <h2 className="text-3xl font-bold text-center">
-                            Professional
-                        </h2>
-                    </div>
-                    <div className="bg-white p-5 rounded-lg shadow-xl flex flex-col justify-between
-                    hover:scale-105 transition-all transition-duration-200">
-                        <img
-                            src={blackReliable}
-                            alt=""
-                            className="w-full object-cover rounded-lg h-[250px]"
-                        />
-                        <h2 className="text-3xl font-bold text-center">
-                            Reliable
-                        </h2>
-                    </div>
-                    <div className="bg-white p-5 rounded-lg shadow-xl flex flex-col justify-between hover:scale-105 transition-all transition-duration-200">
-                        <img
-                            src={whiteCommitted}
-                            alt=""
-                            className="w-full object-cover rounded-lg h-[250px] object-[50%_40%]"
-                        />
-                        <h2 className="text-3xl font-bold text-center">
-                            Committed
-                        </h2>
-                    </div>
-                </div>
-            </section>
+            <section className="h-[400px] max-[1060px]:h-[700px] max-[704px]:h-[1050px]"></section>
 
             <section className="bg-blue-500/10">
                 <div className="px-14 max-md:px-8 max-sm:px-5 py-30 flex max-md:flex-col max-md:space-y-10">
@@ -197,8 +173,9 @@ function App() {
                         </h1>
                         <p className="text-blue-600 text-xl max-lg:text-lg text-center">
                             EasyStay Concierge provides reliable private
-                            transport and concierge services in Jamaica. Ideal for those traveling alone or visiting
-                            for the first time.
+                            transport and concierge services in Jamaica. Ideal
+                            for those traveling alone or visiting for the first
+                            time.
                         </p>
                         <div className="flex max-lg:flex-col space-x-5 max-lg:space-y-5 max-lg:space-x-0 justify-center items-center ">
                             <a href="" className="underline text-blue-600">
@@ -229,7 +206,7 @@ function App() {
             </section>
             <section className="">
                 <div className="px-14 max-md:px-8 max-sm:px-5 py-30 flex max-md:flex-col max-md:space-y-10">
-                                        <div className="flex-1 flex justify-center items-center">
+                    <div className="flex-1 flex justify-center items-center">
                         <div
                             className="p-5 rounded-4xl bg-linear-to-br
                         from-[#b4955f] via-transparent to-transparent"
@@ -279,12 +256,15 @@ function App() {
                             Always On Time, Always There for You.
                         </h1>
                         <p className="text-yellow-600 text-xl max-lg:text-lg text-center">
-                            We pride ourselves in providing a transparent, seamless experience without inconveniences, frustration or pain. No surprise charges, no hiccups, no worries.
+                            We pride ourselves in providing a transparent,
+                            seamless experience without inconveniences,
+                            frustration or pain. No surprise charges, no
+                            hiccups, no worries.
                         </p>
                         <div className="flex space-x-2 justify-center items-center">
                             <p className="text-yellow-600 text-xl text-center">
-                            Questions?
-                        </p>
+                                Questions?
+                            </p>
                             <button
                                 className="border border-yellow-500 px-6 py-4 cursor-pointer 
                             font-bold text-yellow-600
@@ -312,13 +292,13 @@ function App() {
             <section className="">
                 <div className="px-14 max-md:px-8 max-sm:px-5 py-30 flex flex-col space-y-20">
                     <div className="flex-1 flex flex-col justify-center space-y-5">
-                        <h1
-                            className="text-5xl max-lgr:text-4xl max-lg:text-3xl font-libre text-slate-600  text-center"
-                        >
+                        <h1 className="text-5xl max-lgr:text-4xl max-lg:text-3xl font-libre text-slate-600  text-center">
                             Our Services
                         </h1>
-                        <p className="w-1/2 max-md:w-full text-white text-xl max-lg:text-lg text-center mx-auto bg-slate-700/80
-                        p-5 rounded-lg">
+                        <p
+                            className="w-1/2 max-md:w-full text-white text-xl max-lg:text-lg text-center mx-auto bg-slate-700/80
+                        p-5 rounded-lg"
+                        >
                             Our services are designed to provide a smooth,
                             reliable, and stress-free experience throughout your
                             stay. Choose a package designed around your
@@ -336,7 +316,13 @@ function App() {
                             </li>
                         </ul>
                         <p className="w-1/2 max-md:w-full text-slate-600 text-xl text-center mx-auto">
-                            Travel comfortably with transparent, all-inclusive pricing. Every booking includes fuel, highway tolls, parking costs and complimentary bottled water for your journey. <span className="font-bold underline">No hidden fees, ever.</span>
+                            Travel comfortably with transparent, all-inclusive
+                            pricing. Every booking includes fuel, highway tolls,
+                            parking costs and complimentary bottled water for
+                            your journey.{" "}
+                            <span className="font-bold underline">
+                                No hidden fees, ever.
+                            </span>
                         </p>
                     </div>
                     <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-5">
@@ -359,7 +345,10 @@ function App() {
                                         </p>
                                     </li>
                                     <li>
-                                        <p>Indefinite waiting during appointments</p>
+                                        <p>
+                                            Indefinite waiting during
+                                            appointments
+                                        </p>
                                     </li>
                                     <li>
                                         <p>
@@ -399,7 +388,10 @@ function App() {
                                         </p>
                                     </li>
                                     <li>
-                                        <p>Indefinite waiting during appointments</p>
+                                        <p>
+                                            Indefinite waiting during
+                                            appointments
+                                        </p>
                                     </li>
                                     <li>
                                         <p>Flexible daily schedule</p>
@@ -489,7 +481,11 @@ function App() {
                         <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] space-y-20">
                             <div className="">
                                 <a href="/">
-                                <img src={footerLogo} alt="" width="170px" />
+                                    <img
+                                        src={footerLogo}
+                                        alt=""
+                                        width="170px"
+                                    />
                                 </a>
                             </div>
                             <div className="">
@@ -501,17 +497,32 @@ function App() {
                                     </li>
                                     <li>
                                         <p>
-                                            <a className="hover:underline" href="/">About</a>
+                                            <a
+                                                className="hover:underline"
+                                                href="/"
+                                            >
+                                                About
+                                            </a>
                                         </p>
                                     </li>
                                     <li>
                                         <p>
-                                            <a className="hover:underline" href="/">Reviews</a>
+                                            <a
+                                                className="hover:underline"
+                                                href="/"
+                                            >
+                                                Reviews
+                                            </a>
                                         </p>
                                     </li>
                                     <li>
                                         <p>
-                                            <a className="hover:underline" href="/">Contact</a>
+                                            <a
+                                                className="hover:underline"
+                                                href="/"
+                                            >
+                                                Contact
+                                            </a>
                                         </p>
                                     </li>
                                 </ul>
@@ -525,17 +536,32 @@ function App() {
                                     </li>
                                     <li>
                                         <p>
-                                            <a className="hover:underline" href="/">Blog</a>
+                                            <a
+                                                className="hover:underline"
+                                                href="/"
+                                            >
+                                                Blog
+                                            </a>
                                         </p>
                                     </li>
                                     <li>
                                         <p>
-                                            <a className="hover:underline" href="/">Booking Form</a>
+                                            <a
+                                                className="hover:underline"
+                                                href="/"
+                                            >
+                                                Booking Form
+                                            </a>
                                         </p>
                                     </li>
                                     <li>
                                         <p>
-                                            <a className="hover:underline" href="/">Trip Cost Calculator</a>
+                                            <a
+                                                className="hover:underline"
+                                                href="/"
+                                            >
+                                                Trip Cost Calculator
+                                            </a>
                                         </p>
                                     </li>
                                 </ul>
@@ -549,18 +575,27 @@ function App() {
                                     </li>
                                     <li>
                                         <p>
-                                            <a className="hover:underline" href="/">Privacy Policy</a>
+                                            <a
+                                                className="hover:underline"
+                                                href="/"
+                                            >
+                                                Privacy Policy
+                                            </a>
                                         </p>
                                     </li>
                                     <li>
                                         <p>
-                                            <a className="hover:underline" href="/">Terms of Service</a>
+                                            <a
+                                                className="hover:underline"
+                                                href="/"
+                                            >
+                                                Terms of Service
+                                            </a>
                                         </p>
                                     </li>
                                 </ul>
                             </div>
                         </div>
-                            
                     </div>
                     <p className="text-center text-sm">
                         &copy; 2026 EasyStay Concierge Ltd. All Rights Reserved
