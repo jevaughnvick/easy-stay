@@ -8,15 +8,18 @@ import footerLogo from "./assets/easystaylogogray.PNG";
 import drivers from "./assets/drivercollage.png";
 import there4u from "./assets/there4u.PNG";
 import { Menu } from 'lucide-react';
+import { HeartHandshake } from 'lucide-react';
+import { BookOpenCheck } from 'lucide-react';
+import { ClipboardClock } from 'lucide-react';
 
 
 function App() {
     return (
         <>
-            <div className="border border-gray-500/20 px-14 max-md:px-8 max-sm:px-5 py-5 grid grid-cols-3 shadow-lg max-lgr:flex max-lgr:justify-between">
+            <div className="border border-gray-500/20 px-14 max-md:px-8 max-sm:px-5 py-4 grid grid-cols-3 shadow-lg max-lgr:flex max-lgr:justify-between">
                 <div className="">
                     <a href="/">
-                        <img src={logo} alt="" width="110px" />
+                        <img src={logo} alt="" width="105px" />
                     </a>
                 </div>
                 <div className="space-x-5 font-bold text-gray-700 flex justify-center items-center max-lgr:hidden">
@@ -35,7 +38,7 @@ function App() {
                     </a>
                     <button
                                 className="bg-amber-500 ml-5 max-lgr:mr-5 px-6 py-4 cursor-pointer text-white
-                                rounded-lg transition-all duration-200
+                                rounded-lg transition-all duration-200 max-xs:hidden
                                 bg-[linear-gradient(110deg,#b8860b,45%,#f1c40f,75%,#b8860b)]
                                 hover:scale-105
                                 hover:shadow-[0_0_20px_rgba(184,134,11,0.5)]
@@ -84,12 +87,12 @@ function App() {
                     </div>
                 </div>
                 <section className="relative h-screen overflow-hidden">
-                    <div className="relative z-10 h-full p-14 max-md:px-8 max-sm:px-5 flex flex-col justify-center max-md:backdrop-blur-[2px]">
-                        <h1 className="text-5xl max-lgr:text-4xl max-sm:text-3xl font-display font-bold text-white w-fit">
-                            Private Driver and<br></br>Personal Assistance
+                    <div className="relative z-10 h-full p-14 max-md:px-8 max-sm:px-5 flex flex-col justify-center max-md:backdrop-blur-[2px] select-none">
+                        <h1 className="text-5xl max-lgr:text-4xl max-lg:text-3xl font-display font-bold text-white w-[70%] max-lgr:w-[75%] max-md:w-full ">
+                            Private Driver and Personal Assistance
                             Service
                         </h1>
-                        <p className="text-white text-lg max-sm:text-base max-lgr:w-[60%] max-md:w-full mt-5 w-1/2">
+                        <p className="text-white text-lg max-lgr:w-[60%] max-md:w-full mt-5 w-1/2">
                             Reliable private transport and concierge services
                             offering comfort, safety and peace of mind designed
                             for a smooth, stress-free experience in Jamaica. We
@@ -97,7 +100,7 @@ function App() {
                             matters. Book easily via our website or get a quote
                             in seconds.
                         </p>
-                        <div className="flex mt-10 w-1/2 max-lgr:w-[60%] max-lg:flex-col max-lg:space-x-0 max-md:space-x-5 space-x-5 max-lg:space-y-5 max-md:space-y-0 max-sm:space-x-0 max-sm:space-y-5 items-center justify-center font-bold max-md:w-full max-md:flex-row max-sm:flex-col">
+                        <div className="flex mt-10 w-1/2 max-lgr:w-[60%] max-lg:flex-col max-lg:space-x-0 max-md:space-x-5 space-x-5 max-lg:space-y-5 max-md:space-y-0 items-center justify-center font-bold max-md:w-full max-md:flex-row">
                                 <button
                                     className="bg-amber-500 px-6 py-4 cursor-pointer
                                     text-white rounded-lg hover:scale-105 transition-all duration-200
@@ -118,9 +121,20 @@ function App() {
                             </button>
                             {/* bg-[length:200%_100%] */}
                         </div>
-                        <p className="flex space-x-5 justify-center text-white text-sm mt-2 w-1/2 max-lgr:w-[60%] max-md:w-full">
-                            Professional Dependable Committed
-                        </p>
+                        {/* <p className="flex space-x-5 justify-center text-white text-sm mt-2 w-1/2 max-lgr:w-[60%] max-md:w-full">
+                            Professional<BookOpenCheck size={25} /> Dependable<ClipboardClock size={25} /> Committed<HeartHandshake size={25} />
+                        </p> */}
+                        <ul className="flex space-x-2 justify-center text-white text-sm mt-2 w-1/2 max-lgr:w-[60%] max-md:w-full font-bold">
+                            <li className="flex items-center">
+                                Professional<BookOpenCheck size={25} className="ml-2" />
+                            </li>
+                            <li className="flex items-center">
+                                Reliable<ClipboardClock size={25} className="ml-2" />
+                            </li>
+                            <li className="flex items-center">
+                                Committed<HeartHandshake size={25} className="ml-2" />
+                            </li>
+                        </ul>
                     </div>
                     <div
                         className="absolute inset-0 bg-linear-to-r from-black/90 via-black/40
@@ -265,7 +279,7 @@ function App() {
                             Always On Time, Always There for You.
                         </h1>
                         <p className="text-yellow-600 text-xl max-lg:text-lg text-center">
-                            We pride ourselves in providing a seamless experience without inconveniences, frustration or pain. No hidden fees, no hiccups, no worries.
+                            We pride ourselves in providing a transparent, seamless experience without inconveniences, frustration or pain. No surprise charges, no hiccups, no worries.
                         </p>
                         <div className="flex space-x-2 justify-center items-center">
                             <p className="text-yellow-600 text-xl text-center">
@@ -315,15 +329,14 @@ function App() {
                                 <p>Sedan &#40;1-2 persons&#41;</p>
                             </li>
                             <li>
-                                <p>SUV &#40;1-2 persons&#41;</p>
+                                <p>SUV &#40;3-4 persons&#41;</p>
                             </li>
                             <li>
                                 <p>Van &#40;5-8 persons&#41;</p>
                             </li>
                         </ul>
-                        <p className="w-1/2 max-md:w-full text-slate-600 text-xl text-center mx-auto font-bold">
-                            All-inclusive services: Fuel, tolls
-                            and parking are all covered.<br></br><span className="underline">No hidden fees</span>.
+                        <p className="w-1/2 max-md:w-full text-slate-600 text-xl text-center mx-auto">
+                            Travel comfortably with transparent, all-inclusive pricing. Every booking includes fuel, highway tolls, parking costs and complimentary bottled water for your journey. <span className="font-bold underline">No hidden fees, ever.</span>
                         </p>
                     </div>
                     <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-5">
@@ -361,7 +374,7 @@ function App() {
                                 <p className="flex items-center">
                                     Starting from
                                     <span className="text-green-600 font-bold text-2xl ml-1 mr-1 ">
-                                        300
+                                        320
                                     </span>
                                     USD/ day
                                 </p>
@@ -398,7 +411,7 @@ function App() {
                                 <p className="flex items-center">
                                     Starting from
                                     <span className="text-green-600 font-bold text-2xl ml-1 mr-1 ">
-                                        280
+                                        300
                                     </span>
                                     USD/ day
                                 </p>
@@ -429,7 +442,7 @@ function App() {
                                 <p className="flex items-center">
                                     Starting from
                                     <span className="text-green-600 font-bold text-2xl ml-1 mr-1 ">
-                                        130
+                                        150
                                     </span>
                                     USD/ day
                                 </p>
@@ -472,8 +485,8 @@ function App() {
             </section>
             <footer className="bg-slate-500/10">
                 <div className="text-gray-700 flex flex-col justify-between">
-                    <div className="px-14 py-14">
-                        <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] space-y-10">
+                    <div className="px-14 max-md:px-8 max-sm:px-5 pt-14 pb-32">
+                        <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] space-y-20">
                             <div className="">
                                 <a href="/">
                                 <img src={footerLogo} alt="" width="170px" />
