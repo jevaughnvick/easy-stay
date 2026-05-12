@@ -86,9 +86,9 @@ function App() {
                         </h2>
                     </div>
                 </div>
-                <section className="relative h-screen overflow-hidden">
+                <section className="relative h-screen max-lg:h-[95vh] max-md:h-[90vh] max-sm:h-[85vh] overflow-hidden">
                     <div className="relative z-10 h-full p-14 max-md:px-8 max-sm:px-5 flex flex-col justify-center max-md:backdrop-blur-[2px] select-none">
-                        <h1 className="text-5xl max-lgr:text-4xl max-lg:text-3xl font-display font-bold text-white w-[70%] max-lgr:w-[75%] max-md:w-full ">
+                        <h1 className="text-5xl max-lgr:text-4xl max-lg:text-3xl max-sm:text-2xl font-display font-bold text-white w-[70%] max-lgr:w-[75%] max-md:w-full ">
                             Private Driver and Personal Assistance
                             Service
                         </h1>
@@ -100,11 +100,11 @@ function App() {
                             matters. Book easily via our website or get a quote
                             in seconds.
                         </p>
-                        <div className="flex mt-10 w-1/2 max-lgr:w-[60%] max-lg:flex-col max-lg:space-x-0 max-md:space-x-5 space-x-5 max-lg:space-y-5 max-md:space-y-0 items-center justify-center font-bold max-md:w-full max-md:flex-row">
+                        <div className="flex mt-10 w-1/2 max-lgr:w-[60%] max-md:space-x-5 space-x-5  max-md:space-y-0 items-center justify-center font-bold max-md:w-full max-md:flex-row">
                                 <button
                                     className="bg-amber-500 px-6 py-4 cursor-pointer
                                     text-white rounded-lg hover:scale-105 transition-all duration-200
-                                    active:scale-95"
+                                    active:scale-95 max-sm:text-sm"
                                 >
                                     Leave a Review
                                 </button>
@@ -115,7 +115,7 @@ function App() {
                                 hover:scale-105
                                 hover:shadow-[0_0_20px_rgba(184,134,11,0.5)]
                                 hover:bg-[length:150%_200%]
-                                active:scale-95"
+                                active:scale-95 max-sm:text-sm"
                             >
                                 Book Your Ride
                             </button>
@@ -295,7 +295,7 @@ function App() {
                             </button>
                         </div>
                     </div>
-                    <div className="flex-1 flex justify-center items-center">
+                    <div className="flex-1 flex justify-center items-center max-lgr:flex-[1.3]">
                         <div
                             className="p-5 rounded-full bg-linear-to-bl
                         from-yellow-500 via-transparent to-transparent"
@@ -303,7 +303,7 @@ function App() {
                             <img
                                 src={there4u}
                                 alt=""
-                                className="w-[400px] h-[400px] max-xs:w-[350px] max-xs:h-[350px] rounded-full object-cover"
+                                className="w-[400px] h-[400px] max-lg:w-[350px] max-lg:h-[350px] rounded-full object-cover"
                             />
                         </div>
                     </div>
