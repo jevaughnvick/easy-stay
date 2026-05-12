@@ -7,31 +7,34 @@ import help from "./assets/help.PNG";
 import footerLogo from "./assets/easystaylogogray.PNG";
 import drivers from "./assets/drivercollage.png";
 import there4u from "./assets/there4u.PNG";
-
+import { Menu } from 'lucide-react';
 
 
 function App() {
     return (
         <>
-            <div className="border border-gray-500/20 px-14 py-5 grid grid-cols-3 shadow-lg">
+            <div className="border border-gray-500/20 px-14 max-md:px-8 max-sm:px-5 py-5 grid grid-cols-3 shadow-lg max-lgr:flex max-lgr:justify-between">
                 <div className="">
                     <a href="/">
                         <img src={logo} alt="" width="110px" />
                     </a>
                 </div>
-                <div className="space-x-5 font-bold text-gray-700 flex justify-center items-center">
+                <div className="space-x-5 font-bold text-gray-700 flex justify-center items-center max-lgr:hidden">
                     <a href="">Services</a>
                     <a href="">Reviews</a>
                     <a href="">Blog</a>
                     <a href="">Contact</a>
-                    <a href="">About Us</a>
+                    <a href="">About</a>
                 </div>
-                <div className="flex items-center space-x-5 justify-end font-bold">
-                    <a href="" className="underline text-amber-600">
+                <div className="flex items-center justify-end font-bold">
+                    <a href="" className="max-lg:hidden underline text-amber-600">
                         Get a Quote
                     </a>
+                    <a href="" className="max-xs:hidden lg:hidden underline text-amber-600">
+                        Quote
+                    </a>
                     <button
-                                className="bg-amber-500 px-6 py-4 cursor-pointer text-white
+                                className="bg-amber-500 ml-5 max-lgr:mr-5 px-6 py-4 cursor-pointer text-white
                                 rounded-lg transition-all duration-200
                                 bg-[linear-gradient(110deg,#b8860b,45%,#f1c40f,75%,#b8860b)]
                                 hover:scale-105
@@ -40,12 +43,13 @@ function App() {
                                 active:scale-95"
                             >
                                 Book Now
-                            </button>
+                    </button>
+                        <Menu size={25} className="lgr:hidden" />
                 </div>
             </div>
 
             <div className="relative">
-                <div className="w-[1200px] h-[350px] absolute top-[550px] right-0 bottom-0 z-100 left-1/2 -translate-x-1/2 grid grid-cols-3 space-x-5">
+                <div className="w-[90%] max-lgr:hidden h-[350px] absolute top-[550px] right-0 bottom-0 z-100 left-1/2 -translate-x-1/2 grid grid-cols-3 space-x-5">
                     <div className="bg-white p-5 rounded-lg shadow-xl flex flex-col justify-between
                     hover:scale-105 transition-all transition-duration-200">
                         <img
@@ -80,12 +84,12 @@ function App() {
                     </div>
                 </div>
                 <section className="relative h-screen overflow-hidden">
-                    <div className="relative z-10 h-full p-14 flex flex-col justify-center">
-                        <h1 className="text-5xl font-display font-bold text-white w-fit">
+                    <div className="relative z-10 h-full p-14 max-md:px-8 max-sm:px-5 flex flex-col justify-center max-md:backdrop-blur-[2px]">
+                        <h1 className="text-5xl max-lgr:text-4xl max-sm:text-3xl font-display font-bold text-white w-fit">
                             Private Driver and<br></br>Personal Assistance
                             Service
                         </h1>
-                        <p className="text-white text-lg mt-5 w-1/2">
+                        <p className="text-white text-lg max-sm:text-base max-lgr:w-[60%] max-md:w-full mt-5 w-1/2">
                             Reliable private transport and concierge services
                             offering comfort, safety and peace of mind designed
                             for a smooth, stress-free experience in Jamaica. We
@@ -93,14 +97,14 @@ function App() {
                             matters. Book easily via our website or get a quote
                             in seconds.
                         </p>
-                        <div className="flex space-x-5 items-center justify-center font-bold mt-10 w-1/2">
-                            <button
-                                className="bg-amber-500 px-6 py-4 cursor-pointer
-                                text-white rounded-lg hover:scale-105 transition-all duration-200
-                                active:scale-95"
-                            >
-                                Leave a Review
-                            </button>
+                        <div className="flex mt-10 w-1/2 max-lgr:w-[60%] max-lg:flex-col max-lg:space-x-0 max-md:space-x-5 space-x-5 max-lg:space-y-5 max-md:space-y-0 max-sm:space-x-0 max-sm:space-y-5 items-center justify-center font-bold max-md:w-full max-md:flex-row max-sm:flex-col">
+                                <button
+                                    className="bg-amber-500 px-6 py-4 cursor-pointer
+                                    text-white rounded-lg hover:scale-105 transition-all duration-200
+                                    active:scale-95"
+                                >
+                                    Leave a Review
+                                </button>
                             <button
                                 className="bg-amber-500 px-6 py-4 cursor-pointer text-white
                                 rounded-lg tracking-widest transition-all duration-200
@@ -114,7 +118,7 @@ function App() {
                             </button>
                             {/* bg-[length:200%_100%] */}
                         </div>
-                        <p className="flex space-x-5 justify-center text-white text-sm mt-2 w-1/2">
+                        <p className="flex space-x-5 justify-center text-white text-sm mt-2 w-1/2 max-lgr:w-[60%] max-md:w-full">
                             Professional Dependable Committed
                         </p>
                     </div>
@@ -125,28 +129,64 @@ function App() {
                     <img
                         src={heroPhoto}
                         alt=""
-                        className="absolute inset-0 scale-120 origin-left w-full h-full object-cover"
+                        className="absolute inset-0 scale-120 max-lg:scale-110 max-md:scale-100 max-lg:object-[35%_50%] max-md:object-center max-md:origin-center origin-left max-sm:object-[60%_50%] w-full h-full object-cover"
                     />
                 </section>
             </div>
 
-            <section className="h-[400px]"></section>
+            <section className="h-[400px] max-lgr:hidden"></section>
+            <section className="lgr:hidden">
+                <div className="px-14 max-md:px-8 max-sm:px-5 py-30 grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-5">
+                    <div className="bg-white p-5 rounded-lg shadow-xl flex flex-col justify-between
+                    hover:scale-105 transition-all transition-duration-200">
+                        <img
+                            src={pro}
+                            alt=""
+                            className="w-full object-cover rounded-lg h-[250px]"
+                        />
+                        <h2 className="text-3xl font-bold text-center">
+                            Professional
+                        </h2>
+                    </div>
+                    <div className="bg-white p-5 rounded-lg shadow-xl flex flex-col justify-between
+                    hover:scale-105 transition-all transition-duration-200">
+                        <img
+                            src={blackReliable}
+                            alt=""
+                            className="w-full object-cover rounded-lg h-[250px]"
+                        />
+                        <h2 className="text-3xl font-bold text-center">
+                            Reliable
+                        </h2>
+                    </div>
+                    <div className="bg-white p-5 rounded-lg shadow-xl flex flex-col justify-between hover:scale-105 transition-all transition-duration-200">
+                        <img
+                            src={whiteCommitted}
+                            alt=""
+                            className="w-full object-cover rounded-lg h-[250px] object-[50%_40%]"
+                        />
+                        <h2 className="text-3xl font-bold text-center">
+                            Committed
+                        </h2>
+                    </div>
+                </div>
+            </section>
 
             <section className="bg-blue-500/10">
-                <div className="px-14 py-30 flex">
+                <div className="px-14 max-md:px-8 max-sm:px-5 py-30 flex max-md:flex-col max-md:space-y-10">
                     <div className="flex-1 flex flex-col justify-center space-y-5">
                         <h1
-                            className="text-5xl font-libre text-white bg-blue-500/90
+                            className="text-5xl max-lgr:text-4xl max-lg:text-3xl font-libre text-white bg-blue-500/90
                         p-5 rounded-lg text-center"
                         >
                             Private Transport and Personal Assistance.
                         </h1>
-                        <p className="text-blue-600 text-xl text-center">
+                        <p className="text-blue-600 text-xl max-lg:text-lg text-center">
                             EasyStay Concierge provides reliable private
                             transport and concierge services in Jamaica. Ideal for those traveling alone or visiting
                             for the first time.
                         </p>
-                        <div className="flex space-x-5 justify-center items-center ">
+                        <div className="flex max-lg:flex-col space-x-5 max-lg:space-y-5 max-lg:space-x-0 justify-center items-center ">
                             <a href="" className="underline text-blue-600">
                                 Learn More
                             </a>
@@ -167,21 +207,33 @@ function App() {
                             <img
                                 src={help}
                                 alt=""
-                                className="w-[350px] rounded-4xl h-[450px] object-cover"
+                                className="w-[400px] rounded-4xl h-[400px] object-cover"
                             />
                         </div>
                     </div>
                 </div>
             </section>
             <section className="">
-                <div className="px-14 py-30 flex flex-row-reverse">
+                <div className="px-14 max-md:px-8 max-sm:px-5 py-30 flex max-md:flex-col max-md:space-y-10">
+                                        <div className="flex-1 flex justify-center items-center">
+                        <div
+                            className="p-5 rounded-4xl bg-linear-to-br
+                        from-[#b4955f] via-transparent to-transparent"
+                        >
+                            <img
+                                src={drivers}
+                                alt=""
+                                className="w-[350px] rounded-4xl h-[450px] object-cover"
+                            />
+                        </div>
+                    </div>
                     <div className="flex-1 flex flex-col justify-center space-y-5">
-                        <h1 className="text-5xl font-libre text-[#b4955f] text-center">
+                        <h1 className="text-5xl max-lgr:text-4xl max-lg:text-3xl font-libre text-[#b4955f] text-center">
                             Carefully Selected and Professionally Trained
                             Drivers.
                         </h1>
                         <p
-                            className="text-xl text-white bg-[#b4955f]/90
+                            className="text-xl max-lg:text-lg text-white bg-[#b4955f]/90
                         p-5 rounded-lg text-center"
                         >
                             All EasyStay drivers are professionally trained,
@@ -201,30 +253,18 @@ function App() {
                             </button>
                         </div>
                     </div>
-                    <div className="flex-1 flex justify-center items-center">
-                        <div
-                            className="p-5 rounded-4xl bg-linear-to-br
-                        from-[#b4955f] via-transparent to-transparent"
-                        >
-                            <img
-                                src={drivers}
-                                alt=""
-                                className="w-[350px] rounded-4xl h-[450px] object-cover"
-                            />
-                        </div>
-                    </div>
                 </div>
             </section>
             <section className="bg-yellow-500/10">
-                <div className="px-14 py-30 flex">
+                <div className="px-14 max-md:px-8 max-sm:px-5 py-30 flex max-md:flex-col max-md:space-y-10">
                     <div className="flex-1 flex flex-col justify-center space-y-5">
                         <h1
-                            className="text-5xl font-libre text-white bg-yellow-500/80
+                            className="text-5xl max-lgr:text-4xl max-lg:text-3xl font-libre text-white bg-yellow-500/80
                         p-5 rounded-lg text-center"
                         >
                             Always On Time, Always There for You.
                         </h1>
-                        <p className="text-yellow-600 text-xl text-center">
+                        <p className="text-yellow-600 text-xl max-lg:text-lg text-center">
                             We pride ourselves in providing a seamless experience without inconveniences, frustration or pain. No hidden fees, no hiccups, no worries.
                         </p>
                         <div className="flex space-x-2 justify-center items-center">
@@ -249,28 +289,28 @@ function App() {
                             <img
                                 src={there4u}
                                 alt=""
-                                className="w-[400px] h-[400px] rounded-full object-cover"
+                                className="w-[400px] h-[400px] max-xs:w-[350px] max-xs:h-[350px] rounded-full object-cover"
                             />
                         </div>
                     </div>
                 </div>
             </section>
             <section className="">
-                <div className="px-14 py-30 flex flex-col space-y-20">
+                <div className="px-14 max-md:px-8 max-sm:px-5 py-30 flex flex-col space-y-20">
                     <div className="flex-1 flex flex-col justify-center space-y-5">
                         <h1
-                            className="text-5xl font-libre text-slate-600  text-center"
+                            className="text-5xl max-lgr:text-4xl max-lg:text-3xl font-libre text-slate-600  text-center"
                         >
                             Our Services
                         </h1>
-                        <p className="w-1/2 text-white text-xl text-center mx-auto bg-slate-700/80
+                        <p className="w-1/2 max-md:w-full text-white text-xl max-lg:text-lg text-center mx-auto bg-slate-700/80
                         p-5 rounded-lg">
                             Our services are designed to provide a smooth,
                             reliable, and stress-free experience throughout your
                             stay. Choose a package designed around your
                             schedule, travel needs, and level of flexibility.
                         </p>
-                        <ul className="w-1/2 text-slate-600 text-xl text-center mx-auto font-bold flex space-x-5">
+                        <ul className="w-1/2 max-md:w-full text-slate-600 text-xl text-center mx-auto font-bold flex space-x-5">
                             <li>
                                 <p>Sedan &#40;1-2 persons&#41;</p>
                             </li>
@@ -281,12 +321,12 @@ function App() {
                                 <p>Van &#40;5-8 persons&#41;</p>
                             </li>
                         </ul>
-                        <p className="w-1/2 text-slate-600 text-xl text-center mx-auto font-bold">
+                        <p className="w-1/2 max-md:w-full text-slate-600 text-xl text-center mx-auto font-bold">
                             All-inclusive services: Fuel, tolls
                             and parking are all covered.<br></br><span className="underline">No hidden fees</span>.
                         </p>
                     </div>
-                    <div className="grid grid-cols-3 gap-5">
+                    <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-5">
                         <div className="h-[500px] bg-white p-5 rounded-lg shadow-xl flex flex-col justify-between text-xl hover:scale-105 transition-all transition-duration-200">
                             <div className="space-y-5">
                                 <h3 className="bg-slate-700/80 p-2 text-white font-bold text-center text-xl">
@@ -431,9 +471,9 @@ function App() {
                 </div>
             </section>
             <footer className="bg-slate-500/10">
-                <div className="h-[500px] text-gray-700 flex flex-col justify-between">
+                <div className="text-gray-700 flex flex-col justify-between">
                     <div className="px-14 py-14">
-                        <div className="grid grid-cols-4">
+                        <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] space-y-10">
                             <div className="">
                                 <a href="/">
                                 <img src={footerLogo} alt="" width="170px" />
