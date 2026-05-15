@@ -98,16 +98,13 @@ function App() {
 
                 <section className="relative h-screen max-lgr:h-[95vh] max-md:h-[90vh] max-sm:h-[85vh] overflow-hidden">
                     <div className="relative z-10 h-full p-14 max-md:px-8 max-sm:px-5 flex flex-col justify-center max-md:backdrop-blur-[2px] select-none">
-                        <h1 className="text-5xl max-lgr:text-4xl max-lg:text-3xl max-sm:text-2xl font-display font-bold text-white w-[70%] max-lgr:w-[75%] max-md:w-full ">
+                        <h1 className="text-5xl max-lgr:text-4xl max-lg:text-3xl font-display font-bold text-white w-[70%] max-lgr:w-[75%] max-md:w-full ">
                             Private Driver and Personal Assistance Service
                         </h1>
                         <p className="text-white text-lg max-lgr:w-[60%] max-md:w-full mt-5 w-1/2">
                             Reliable private transport and concierge services
                             offering comfort, safety and peace of mind designed
-                            for a smooth, stress-free experience in Jamaica. We
-                            handle your transportation so you can focus on what
-                            matters. Book easily via our website or get a quote
-                            in seconds.
+                            for a smooth, stress-free experience in Jamaica.
                         </p>
                         <div className="flex mt-10 w-1/2 max-lgr:w-[60%] max-md:space-x-5 space-x-5  max-md:space-y-0 items-center justify-center font-bold max-md:w-full max-md:flex-row">
                             <button
@@ -160,10 +157,10 @@ function App() {
                 </section>
             </div>
 
-            <section className="h-[400px] max-[1060px]:h-[700px] max-[704px]:h-[1050px]"></section>
+            <section className="h-[300px] max-[1060px]:h-[600px] max-[704px]:h-[950px]"></section>
 
             <section className="bg-blue-500/10">
-                <div className="px-14 max-md:px-8 max-sm:px-5 py-30 flex max-md:flex-col max-md:space-y-10">
+                <div className="px-14 max-md:px-8 max-sm:px-5 py-14 flex max-md:flex-col max-md:space-y-10">
                     <div className="flex-1 flex flex-col justify-center space-y-5">
                         <h1
                             className="text-5xl max-lgr:text-4xl max-lg:text-3xl font-libre text-white bg-blue-500/90
@@ -205,7 +202,7 @@ function App() {
                 </div>
             </section>
             <section className="">
-                <div className="px-14 max-md:px-8 max-sm:px-5 py-30 flex max-md:flex-col max-md:space-y-10">
+                <div className="px-14 max-md:px-8 max-sm:px-5 py-14 flex max-md:flex-col max-md:space-y-10">
                     <div className="flex-1 flex justify-center items-center">
                         <div
                             className="p-5 rounded-4xl bg-linear-to-br
@@ -247,7 +244,7 @@ function App() {
                 </div>
             </section>
             <section className="bg-yellow-500/10">
-                <div className="px-14 max-md:px-8 max-sm:px-5 py-30 flex max-md:flex-col max-md:space-y-10">
+                <div className="px-14 max-md:px-8 max-sm:px-5 py-14 flex max-md:flex-col max-md:space-y-10">
                     <div className="flex-1 flex flex-col justify-center space-y-5">
                         <h1
                             className="text-5xl max-lgr:text-4xl max-lg:text-3xl font-libre text-white bg-yellow-500/80
@@ -290,13 +287,13 @@ function App() {
                 </div>
             </section>
             <section className="">
-                <div className="px-14 max-md:px-8 max-sm:px-5 py-30 flex flex-col space-y-20">
+                <div className="px-14 max-md:px-8 max-sm:px-5 py-14 flex flex-col space-y-20">
                     <div className="flex-1 flex flex-col justify-center space-y-5">
-                        <h1 className="text-5xl max-lgr:text-4xl max-lg:text-3xl font-libre text-slate-600  text-center">
+                        <h1 className="text-5xl max-lgr:text-4xl max-lg:text-3xl font-libre text-teal-600  text-center">
                             Our Services
                         </h1>
                         <p
-                            className="w-1/2 max-md:w-full text-white text-xl max-lg:text-lg text-center mx-auto bg-slate-700/80
+                            className="w-1/2 max-md:w-full text-white text-xl max-lg:text-lg text-center mx-auto bg-teal-700/80
                         p-5 rounded-lg"
                         >
                             Our services are designed to provide a smooth,
@@ -304,7 +301,7 @@ function App() {
                             stay. Choose a package designed around your
                             schedule, travel needs, and level of flexibility.
                         </p>
-                        <ul className="w-1/2 max-md:w-full text-slate-600 text-xl text-center mx-auto font-bold flex space-x-5">
+                        <ul className="w-1/2 max-md:w-full text-teal-600 text-xl text-center mx-auto font-bold flex space-x-5">
                             <li>
                                 <p>Sedan &#40;1-2 persons&#41;</p>
                             </li>
@@ -315,7 +312,7 @@ function App() {
                                 <p>Van &#40;5-8 persons&#41;</p>
                             </li>
                         </ul>
-                        <p className="w-1/2 max-md:w-full text-slate-600 text-xl text-center mx-auto">
+                        <p className="w-1/2 max-md:w-full text-teal-600 text-xl text-center mx-auto">
                             Travel comfortably with transparent, all-inclusive
                             pricing. Every booking includes fuel, highway tolls,
                             parking costs and complimentary bottled water for
@@ -324,11 +321,14 @@ function App() {
                                 No hidden fees, ever.
                             </span>
                         </p>
+                        <p className="w-1/2 max-md:w-full text-teal-600 text-xl text-center mx-auto">
+                            We handle your transportation so you can focus on what matters. Book directly using your preferred service below.
+                        </p>
                     </div>
                     <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-5">
                         <div className="h-[500px] bg-white p-5 rounded-lg shadow-xl flex flex-col justify-between text-xl hover:scale-105 transition-all transition-duration-200">
                             <div className="space-y-5">
-                                <h3 className="bg-slate-700/80 p-2 text-white font-bold text-center text-xl">
+                                <h3 className="bg-teal-700/80 p-2 text-white font-bold text-center text-xl">
                                     One &#40;1&#41; Day Concierge<br></br>
                                     &#40;Kingston&#41;
                                 </h3>
@@ -363,15 +363,15 @@ function App() {
                                 <p className="flex items-center">
                                     Starting from
                                     <span className="text-green-600 font-bold text-2xl ml-1 mr-1 ">
-                                        320
+                                        300
                                     </span>
                                     USD/ day
                                 </p>
                             </div>
                         </div>
-                        <div className="h-[500px] bg-white border-4 border-slate-700 p-5 rounded-lg shadow-xl flex flex-col justify-between text-xl hover:scale-105 transition-all transition-duration-200">
+                        <div className="h-[500px] bg-white border-4 border-teal-700 p-5 rounded-lg shadow-xl flex flex-col justify-between text-xl hover:scale-105 transition-all transition-duration-200">
                             <div className="space-y-5">
-                                <h3 className="bg-slate-700/80 p-2 text-white font-bold text-center text-xl">
+                                <h3 className="bg-teal-700/80 p-2 text-white font-bold text-center text-xl">
                                     Two &#40;2&#41; to Three &#40;3&#41; Day
                                     <br></br>Concierge
                                 </h3>
@@ -403,7 +403,7 @@ function App() {
                                 <p className="flex items-center">
                                     Starting from
                                     <span className="text-green-600 font-bold text-2xl ml-1 mr-1 ">
-                                        300
+                                        280
                                     </span>
                                     USD/ day
                                 </p>
@@ -411,7 +411,7 @@ function App() {
                         </div>
                         <div className="h-[500px] bg-white p-5 rounded-lg shadow-xl flex flex-col justify-between text-xl hover:scale-105 transition-all transition-duration-200">
                             <div className="space-y-5">
-                                <h3 className="bg-slate-700/80 p-2 text-white font-bold text-center text-xl">
+                                <h3 className="bg-teal-700/80 p-2 text-white font-bold text-center text-xl">
                                     Airport/ Short <br></br>Services
                                 </h3>
                                 <ul>
@@ -434,7 +434,7 @@ function App() {
                                 <p className="flex items-center">
                                     Starting from
                                     <span className="text-green-600 font-bold text-2xl ml-1 mr-1 ">
-                                        150
+                                        130
                                     </span>
                                     USD/ day
                                 </p>
@@ -442,7 +442,7 @@ function App() {
                         </div>
                         <div className="h-[500px] bg-white p-5 rounded-lg shadow-xl flex flex-col justify-between text-xl hover:scale-105 transition-all transition-duration-200">
                             <div className="space-y-5">
-                                <h3 className="bg-slate-700/80 p-2 text-white font-bold text-center text-xl">
+                                <h3 className="bg-teal-700/80 p-2 text-white font-bold text-center text-xl">
                                     Out-of-Town <br></br>Services
                                 </h3>
                                 <p>
@@ -453,7 +453,7 @@ function App() {
                                 <p>
                                     <a
                                         href=""
-                                        className="underline text-slate-700"
+                                        className="underline text-teal-700"
                                     >
                                         Contact us
                                     </a>{" "}
@@ -475,7 +475,7 @@ function App() {
                     </div>
                 </div>
             </section>
-            <footer className="bg-slate-500/10">
+            <footer className="bg-gray-500/10">
                 <div className="text-gray-700 flex flex-col justify-between">
                     <div className="px-14 max-md:px-8 max-sm:px-5 pt-14 pb-32">
                         <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] space-y-20">
